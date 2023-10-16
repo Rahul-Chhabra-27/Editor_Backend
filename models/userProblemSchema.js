@@ -17,5 +17,5 @@ const userProblemSchema = mongoose.Schema({
         type:Buffer,
         required:true,
     }
-})
+},{ timestamp : true })
 module.exports = mongoose.model("UserProblem",userProblemSchema);

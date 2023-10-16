@@ -34,7 +34,7 @@ const submissionSchema = mongoose.Schema({
         required:[true]
     }
     //// Incomplete........
-})
+}, { timestamp : true })
 module.exports = mongoose.model('Submissions',submissionSchema);
 
 // 1.Submission_id.
